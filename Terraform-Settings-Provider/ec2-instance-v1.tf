@@ -5,6 +5,5 @@ resource "aws_instance" "ec2_vm" {
     user_data = file("${path.module}/app1-install.sh")
     tags = {
       "Name" = "EC2 POC"
-    }
-  
+    } 
 }
